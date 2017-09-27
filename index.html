@@ -9,16 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS\index.css">
+    <script src="JS\index.js"></script>
     <title>Weather</title>
 </head>
 
 <body>
     <h1>Check weather</h1>
     <div class="container">
-        <div class="col-lg-offset-2 col-lg-4">
+        <div class="col-lg-offset-1 col-lg-4">
             <div class="form-group">
                 <label for="sel2">Choose Province : </label>
-                <select multiple class="form-control" id="sel2">
+                <select multiple class="form-control" id="selProcince">
                     <option value="Chiang Mai">Chiang Mai</option>
                     <option value="Chiang Rai">Chiang Rai</option>
                     <option value="Khon Kaen">Khon Kaen</option>
@@ -32,7 +33,17 @@
                     <option value="Chumphon">Chumphon</option>
                     <option value="Phuket">Phuket</option>
                 </select><br>
-                <button type="button" class="btn btn-primary btn-block">View Weather</button>
+                <button id="btnView" type="button" class="btn btn-primary btn-block">View Weather</button>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+            <div class="panel panel-info">
+                <div class="panel-heading"><img id="iconHead" src="IMG\weather-icon8.png" alt=""><b>Weather Information</b></div>
+                <div class="panel-body">
+                    <div class="col-lg-3">icon</div>
+                    <div id="detailB" class="col-lg-3"></div>
+                </div>
             </div>
         </div>
     </div>
