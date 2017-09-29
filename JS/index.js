@@ -2,7 +2,10 @@ $(function () {
     $("#btnView").click(function () {
         $("#show").empty();
         var province = $("#selProcince").val();
-        var provincS = "<h4><img id = 'picH' src='google-location-icon-16.png' alt=''><b>" + province + "</b></h4>";
+        var d = new Date();
+        var date = d.toDateString();
+        console.log(date);
+        var provincS = "<table><tr><td><h4 class = 'fontH'><img id = 'picH' src='google-location-icon-16.png' alt=''><b>" + province + "</b></h4><td> │ </td><td><h4>" + date + "</h4></td></tr></table>";
         $("#show").append(provincS);
         var url = "http://api.openweathermap.org/data/2.5/weather?q=" + province + "&APPID=8fa2029bb98a470196e1be09a67414b6";
         $.get(url, function (data) {
