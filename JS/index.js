@@ -1,6 +1,8 @@
 $(function () {
+    $("#show").hide();
     $("#btnView").click(function () {
         $("#show").empty();
+        $("#show").show();
         var province = $("#selProcince").val();
         var d = new Date();
         var date = d.toDateString();

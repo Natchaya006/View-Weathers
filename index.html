@@ -14,12 +14,13 @@
 </head>
 
 <body>
-    <h1><img id="icon" src="checktheweather.png" alt="">Check weather</h1>
-    <div class="container">
-        <div class="col-lg-offset-1 col-lg-4">
-            <div class="form-group">
-                <label for="sel2">Choose Province : </label>
-                <select multiple class="form-control" id="selProcince">
+    <header class="header" id="top">
+        <h1><img id="icon" src="checktheweather.png" alt="">Check weather</h1>
+        <div class="container">
+            <div class="col-lg-offset-1 col-lg-4">
+                <div class="form-group">
+                    <label for="sel2">Choose Province : </label>
+                    <select multiple class="form-control" id="selProcince">
                     <option value="Bangkok">Bangkok</option>
                     <option value="Chiang Rai">Chiang Rai</option>
                     <option value="Chiang Mai">Chiang Mai</option>
@@ -98,12 +99,13 @@
                     <option value="Satun">Satun</option>
                     <option value="Surat Thani">Surat Thani</option>
                 </select><br>
-                <button id="btnView" type="button" class="btn btn-primary btn-block">View Weather</button>
+                    <button id="btnView" type="button" class="btn btn-primary btn-block">View Weather</button>
+                </div>
             </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5" id="show"></div>
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5" id = "show"></div>
-    </div>
+    </header>
 </body>
 
 </html>
